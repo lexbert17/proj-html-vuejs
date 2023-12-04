@@ -1,5 +1,6 @@
 <script >
 import { store } from './store';
+import "@fortawesome/fontawesome-free/css/all.min.css"
 import AppHeader from "./components/AppHeader.vue";
 import AppHero from "./components/AppHero.vue";
 import  DescriptionForum from "./components/DescriptionForum.vue";
