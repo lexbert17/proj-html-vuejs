@@ -1,11 +1,12 @@
 <script >
+import FeaturedArticle from "./FeaturedArticle.vue";
 import NewsCard from "./NewsCard.vue";
     export default{
   data() {
     return{
       newsTop: [
         {
-          src:"iphone-pic-big.jpg",
+          src:"iphone-lock-big.jpg",
           titolo:"Fusce sollicitudin nunc sed placerat vaius",
           data:"October 11th, 2015 | Comments Off",
           paragrafo:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl"
@@ -17,7 +18,7 @@ import NewsCard from "./NewsCard.vue";
           paragrafo:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl"
         },
         {
-          src:"iphone-pic-big.jpg",
+          src:"watch-big.jpg",
           titolo:"Fusce sollicitudin nunc sed placerat vaius",
           data:"October 11th, 2015 | Comments Off",
           paragrafo:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl"
@@ -30,7 +31,7 @@ import NewsCard from "./NewsCard.vue";
         return new URL(`../assets/images/${src}`, import.meta.url).href;
     }
   },
-  components: {NewsCard}
+  components: { NewsCard, FeaturedArticle }
 
 }
 </script>
@@ -41,11 +42,15 @@ import NewsCard from "./NewsCard.vue";
     <h4>PHASELLUS EGET METUS</h4>
     <h2>All the latest news</h2>
     <hr>
-    <div class="row">
+    <div class="row mt-5">
       <div class="col" v-for="(newe, index) in newsTop" :key="index">
         <NewsCard :image="newe.src" :title="newe.titolo" :date="newe.data" :content="newe.paragrafo"/>
       </div>
+      <FeaturedArticle/>
+      
+      
     </div>
+    
     
   </div>
 </section>
