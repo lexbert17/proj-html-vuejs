@@ -22,7 +22,7 @@ export default{
 
 <style lang="scss" scoped>
 section{
-
+background-color: aqua;
   .ms_small{
     text-align: center;
     width: 50%;

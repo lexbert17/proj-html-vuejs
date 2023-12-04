@@ -11,7 +11,7 @@ export default{
 
 <template>
  <header>
-    <div class="container d-flex ms_cont">
+    <div class="container d-flex ms_container">
       <div class="img_container">
         <img src="../assets/images/big-logo.png" alt="">
       </div>
@@ -30,7 +30,7 @@ export default{
 header{
   background-color: green;
   
-.ms_cont{
+.ms_container{
   flex-wrap: wrap;
   background-color: blue;
   justify-content: space-between;

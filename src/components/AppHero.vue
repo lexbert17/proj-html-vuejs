@@ -10,7 +10,7 @@
 
 <template>
 <section class="d-flex">
-    <div class="container" >
+    <div class="container ms_container" >
       <h1 class="mb-3">Tech forum!</h1>
       <p class="mb-3">Discuss all the lates technology news and trends</p>
       <div class="avada mb-3">
@@ -30,7 +30,7 @@
     align-items: center;
     color: white;
 
-    .container{
+    .ms_container{
       width: 75%;
     
       
