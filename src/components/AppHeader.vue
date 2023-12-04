@@ -33,7 +33,11 @@ header{
 .ms_cont{
   flex-wrap: wrap;
   background-color: blue;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 75%;
+  padding: 1rem 0;
+  align-items: stretch;
+  
   .img_container{
     background-color: red;
     max-width: 250px;
@@ -47,26 +51,32 @@ header{
       list-style: none;
       gap: 1rem; 
       align-items: end;
-      background-color: orange;
+      margin-top: 1rem;
+      
+      
       
       
       
       li:nth-child(7){
         background-color: black;
-        
         display: block;
         
+        
         a{
-          padding: 5px 15px;
+          padding: 0 15px;
+          
+          
         }
       }
       li{
         text-decoration: none; 
-        
+        align-self: center;
+        height: 100%;
         
         a{
           text-decoration: none;
           color: white;
+          
         }
       }
     
