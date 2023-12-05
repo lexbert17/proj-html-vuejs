@@ -12,16 +12,30 @@ export default{
 </script>
 
 <template>
-  <section>
-        <div class="ms_container">
-            <h4>FEATURE ARTICLE</h4>
-            <h3>Cras malesuada et orci eget pharetra</h3>
-            <p>In quis lectus  sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed baldit dui, dolor at bibendum sadips ets ipsums dolores ficilis uns  leo lectus.</p>
-            <ReadMore/>
-        </div>
+  <section class="ms_wrap">
+    <div class="position">
+        <h4>FEATURE ARTICLE</h4>
+        <h3>Cras malesuada et orci eget pharetra</h3>
+        <p>In quis lectus  sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed baldit dui, dolor at bibendum sadips ets ipsums dolores ficilis uns  leo lectus.</p>
+        <ReadMore/>
+    </div>        
   </section>
 </template>
 
 <style lang="scss" scoped>
+section{
+   background: url(../assets/images/featured_article_1_bg.jpg);
+   background-position: center;
+   background-size: cover;
+   min-height: 500px;
+   color: white;
+   text-align: left;
 
+   .position{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 4rem
+   }
+}
 </style>

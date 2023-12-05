@@ -45,8 +45,6 @@
         background-color: blue;
         display: inline-block;
       
-        
-
         a{
           text-decoration: none;
           color: white;
