@@ -1,12 +1,13 @@
 <script >
 import ReadMore from './ReadMore.vue';
+
     export default{
   data() {
     return{
       
     }
   },
-  components:{ ReadMore }
+  components:{ ReadMore, }
 }
 </script>
 
@@ -20,28 +21,36 @@ import ReadMore from './ReadMore.vue';
             <ReadMore/>
         </div>        
     </aside>
+
+    
 </div>   
 </template>
 
 <style lang="scss" scoped>
 .ms_container{ 
-    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
     .aside_left{
     background: url(../assets/images/featured_article_2_bg.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 400px;
+    height: 450px;
     color: white;
     text-align: left;
     display: flex;
     align-items: center;
-    width:80%;
+    width: 90%;
+    
+    
 
     .position{
         padding: 0 4rem;
         
     }
     }
+
 }    
 </style>

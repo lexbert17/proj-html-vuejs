@@ -1,7 +1,8 @@
 <script >
 import FeaturedArticle from "./FeaturedArticle.vue";
 import NewsCard from "./NewsCard.vue";
-import ReviewedProduct from "./reviewedProduct.vue"
+import ReviewedProduct from "./ReviewedProduct.vue"
+import SmallestCard from "./SmallestCard.vue";
 
     export default{
   data() {
@@ -46,6 +47,23 @@ import ReviewedProduct from "./reviewedProduct.vue"
           paragrafo:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl"
         },
       ],
+      tutorialsAndGuides: [
+        {
+          src:"smallest-watch.jpg",
+          titolo:"Donec ornare pretium eget scelisque justo",
+          data:"October 11th, 2015 | Comments Off",
+        },
+        {
+          src:"smallest-tablet.jpg",
+          titolo:"Fusce sollicitudin nunc sed placerat vaius",
+          data:"October 11th, 2015 | Comments Off",
+        },
+        {
+          src:"smallest-monitor.jpg",
+          titolo:"Proin eu purus sed aru  aliquet curabir vens",
+          data:"October 11th, 2015 | Comments Off",
+        },
+      ],
     }
   },
   methods: {
@@ -53,7 +71,7 @@ import ReviewedProduct from "./reviewedProduct.vue"
         return new URL(`../assets/images/${src}`, import.meta.url).href;
     }
   },
-  components: { NewsCard, FeaturedArticle, ReviewedProduct,  }
+  components: { NewsCard, FeaturedArticle, ReviewedProduct, SmallestCard }
 
 }
 </script>
@@ -75,9 +93,19 @@ import ReviewedProduct from "./reviewedProduct.vue"
         <NewsCard :image="new2.src" :title="new2.titolo" :date="new2.data" :content="new2.paragrafo"/>
       </div>
     </div>
-    <div class="flex">
+    <div class="d-flex aside">
       <ReviewedProduct/>
+      <div class="mt-5">
+        <h4>Tutorials & Guides</h4>
+        <hr>
+        <div class="" v-for="(tutorial, index) in tutorialsAndGuides" :key="index">
+          <SmallestCard :image="tutorial.src" :title="tutorial.titolo" :date="tutorial.data" :content="tutorial.paragrafo"/>
+        </div>
+      </div>
     </div>
+    
+      
+   
      
       
       
@@ -108,10 +136,19 @@ import ReviewedProduct from "./reviewedProduct.vue"
     .ms_row{
       display: flex;
       justify-content: space-between;
+    }
 
-      .ms_col{
+    .aside{
+      align-items: start;
 
+      h4{
+        text-align: left;
+        margin-top: 3rem;
+      }
+      hr{
+        margin: 2rem 0;
       }
     }
+    
 }
 </style>
