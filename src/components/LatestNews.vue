@@ -77,7 +77,7 @@ import SmallestCard from "./SmallestCard.vue";
 </script>
 
 <template>
-<section>
+<section mb-5>
   <div class="container ms_container">
     <h4>PHASELLUS EGET METUS</h4>
     <h2>All the latest news</h2>
@@ -103,15 +103,6 @@ import SmallestCard from "./SmallestCard.vue";
         </div>
       </div>
     </div>
-    
-      
-   
-     
-      
-      
-   
-    
-    
   </div>
 </section>
 </template>
