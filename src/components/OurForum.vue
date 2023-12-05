@@ -1,10 +1,9 @@
 <script >
-import { store } from '../store';
     export default{
       
   data() {
     return{
-      store,
+      
     }
   },
   
@@ -15,7 +14,7 @@ import { store } from '../store';
   <section>
     <div>
       <a href="">
-        <h4>{{ store.sentence }} <i class="fa-solid fa-arrow-right fa-sm" style="color: #ffffff;"></i></h4>
+        <h4>GO TO OUR FORUM <i class="fa-solid fa-arrow-right fa-sm" style="color: #ffffff;"></i></h4>
       </a>  
     </div>
       

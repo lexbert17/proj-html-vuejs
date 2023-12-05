@@ -1,7 +1,6 @@
 import { reactive } from "vue";
 export const store = reactive ({
     arrayHeader:["Home" , "Apple", "Microsoft", "Android", "Forums", "Contact us", "join us"],
-    sentence:"READ OUR BLOG",
     arrayForum:[
         {
             icon:"fa-solid fa-file-lines fa-2xl",

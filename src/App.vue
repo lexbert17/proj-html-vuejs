@@ -5,11 +5,13 @@ import AppHeader from "./components/AppHeader.vue";
 import AppHero from "./components/AppHero.vue";
 import  DescriptionForum from "./components/DescriptionForum.vue";
 import LatestNews from './components/LatestNews.vue';
-import MoreInfo from './components/MoreInfo.vue';
+import ReadOurBlog from './components/ReadOurBlog.vue';
 import ForumSection from './components/ForumSection.vue';
+import OurForum from './components/OurForum.vue'
 import SubscribeNewsletter from './components/SubscribeNewsletter.vue';
 import AppFooterTop from './components/AppFooterTop.vue';
 import AppFooterbot from './components/AppFooterbot.vue';
+import SignUp from './components/SignUp.vue';
 
 
 
@@ -20,7 +22,7 @@ export default {
 
     }
   },
-  components : { AppHeader, AppHero, DescriptionForum, LatestNews, MoreInfo, ForumSection, SubscribeNewsletter, AppFooterTop, AppFooterbot }
+  components : { AppHeader, AppHero, DescriptionForum, LatestNews, ReadOurBlog, ForumSection, SubscribeNewsletter, AppFooterTop, AppFooterbot, OurForum, SignUp, }
 }
 </script>
 
@@ -29,8 +31,10 @@ export default {
 <AppHero/>
 <DescriptionForum/>
 <LatestNews/>
-<MoreInfo/>
+<ReadOurBlog />
 <ForumSection/>
+<OurForum/>
+<SignUp/>
 <SubscribeNewsletter/>
 <AppFooterTop/>
 <AppFooterbot/>
