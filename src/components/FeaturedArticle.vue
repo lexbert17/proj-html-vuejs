@@ -12,7 +12,7 @@ export default{
 </script>
 
 <template>
-  <section class="ms_wrap">
+  <section class="ms_wrap mt-5">
     <div class="position">
         <h4>FEATURE ARTICLE</h4>
         <h3>Cras malesuada et orci eget pharetra</h3>
@@ -30,12 +30,12 @@ section{
    min-height: 500px;
    color: white;
    text-align: left;
+   display: flex;
+   align-items: center;
 
    .position{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 4rem
+    padding: 0 4rem;
+    
    }
 }
 </style>

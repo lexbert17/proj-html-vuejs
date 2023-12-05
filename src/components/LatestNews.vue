@@ -1,6 +1,8 @@
 <script >
 import FeaturedArticle from "./FeaturedArticle.vue";
 import NewsCard from "./NewsCard.vue";
+import ReviewedProduct from "./reviewedProduct.vue"
+
     export default{
   data() {
     return{
@@ -13,17 +15,37 @@ import NewsCard from "./NewsCard.vue";
         },
         {
           src:"iphone-pic-big.jpg",
-          titolo:"Fusce sollicitudin nunc sed placerat vaius",
+          titolo:"Vivamus pellenteque, felisquis varius",
           data:"October 11th, 2015 | Comments Off",
           paragrafo:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl"
         },
         {
           src:"watch-big.jpg",
+          titolo:"Donec ornare pretium eget scelisque justo",
+          data:"October 11th, 2015 | Comments Off",
+          paragrafo:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl"
+        },
+      ],
+      newsBot: [
+        {
+          src:"tablet-big.jpg",
           titolo:"Fusce sollicitudin nunc sed placerat vaius",
           data:"October 11th, 2015 | Comments Off",
           paragrafo:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl"
         },
-      ]
+        {
+          src:"camera-big.jpg",
+          titolo:"Donec facilis sodales leo sit amet laoreet",
+          data:"October 11th, 2015 | Comments Off",
+          paragrafo:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl"
+        },
+        {
+          src:"monitor-big.jpg",
+          titolo:"Proin eu purus sed aru  aliquet curabir vens",
+          data:"October 11th, 2015 | Comments Off",
+          paragrafo:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl"
+        },
+      ],
     }
   },
   methods: {
@@ -31,7 +53,7 @@ import NewsCard from "./NewsCard.vue";
         return new URL(`../assets/images/${src}`, import.meta.url).href;
     }
   },
-  components: { NewsCard, FeaturedArticle }
+  components: { NewsCard, FeaturedArticle, ReviewedProduct,  }
 
 }
 </script>
@@ -42,14 +64,24 @@ import NewsCard from "./NewsCard.vue";
     <h4>PHASELLUS EGET METUS</h4>
     <h2>All the latest news</h2>
     <hr>
-    <div class="row mt-5">
-      <div class="col" v-for="(newe, index) in newsTop" :key="index">
-        <NewsCard :image="newe.src" :title="newe.titolo" :date="newe.data" :content="newe.paragrafo"/>
+    <div class="ms_row mt-5">
+      <div class="ms_col" v-for="(new1, index) in newsTop" :key="index">
+        <NewsCard :image="new1.src" :title="new1.titolo" :date="new1.data" :content="new1.paragrafo"/>
       </div>
-      <FeaturedArticle/>
-      
-      
     </div>
+    <FeaturedArticle/>
+    <div class="ms_row mt-5">
+      <div class="ms_col" v-for="(new2, index) in newsBot" :key="index">
+        <NewsCard :image="new2.src" :title="new2.titolo" :date="new2.data" :content="new2.paragrafo"/>
+      </div>
+    </div>
+    <div class="flex">
+      <ReviewedProduct/>
+    </div>
+     
+      
+      
+   
     
     
   </div>
@@ -71,6 +103,15 @@ import NewsCard from "./NewsCard.vue";
       width: 70px;
       margin: auto;
       border: 1.5px solid brown;
+    }
+
+    .ms_row{
+      display: flex;
+      justify-content: space-between;
+
+      .ms_col{
+
+      }
     }
 }
 </style>

@@ -21,7 +21,7 @@
 </script>
 
 <template>
-<div  style="width: 18rem;">
+<div id="ms_card" style="width: 18rem;">
   <img :src="getImageUrl(image)" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{ title }}</h5>
@@ -32,5 +32,7 @@
 </template>
 
 <style lang="scss" scoped>
-
+#ms_card{
+    text-align: left;
+}
 </style>
