@@ -10,7 +10,7 @@ import SmallestCard from "./SmallestCard.vue";
       newsTop: [
         {
           src:"iphone-lock-big.jpg",
-          titolo:"Fusce sollicitudin nunc sed placerat vaius",
+          titolo:"Morbi vitae dui euismod vulputate sollicitudin",
           data:"October 11th, 2015 | Comments Off",
           paragrafo:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl"
         },
@@ -79,9 +79,9 @@ import SmallestCard from "./SmallestCard.vue";
 <template>
 <section mb-5>
   <div class="container ms_container">
-    <h4>PHASELLUS EGET METUS</h4>
+    <h4 class="ms_pasellus">PHASELLUS EGET METUS</h4>
     <h2>All the latest news</h2>
-    <hr>
+    <hr class="mt-4 first_hr">
     <div class="ms_row mt-5">
       <div class="ms_col" v-for="(new1, index) in newsTop" :key="index">
         <NewsCard :image="new1.src" :title="new1.titolo" :date="new1.data" :content="new1.paragrafo"/>
@@ -96,8 +96,8 @@ import SmallestCard from "./SmallestCard.vue";
     <div class="d-flex aside">
       <ReviewedProduct/>
       <div class="mt-5">
-        <h4>Tutorials & Guides</h4>
-        <hr>
+        <h4 class="guides">Tutorials & Guides</h4>
+        <hr class="ms_hr mt-4 mb-4">
         <div class="" v-for="(tutorial, index) in tutorialsAndGuides" :key="index">
           <SmallestCard :image="tutorial.src" :title="tutorial.titolo" :date="tutorial.data" :content="tutorial.paragrafo"/>
         </div>
@@ -112,16 +112,20 @@ import SmallestCard from "./SmallestCard.vue";
   width: 75%;
   text-align: center;
   padding: 3rem 0;
-    h4{
-
+    .ms_pasellus{
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      font-size: .8rem;
+      letter-spacing: 1px;
     }
     h2{
-
+      font-family: 'Noto Sans TC Variable', sans-serif;
+      font-weight: 900;
     }
-    hr{
+    .first_hr{
       width: 70px;
       margin: auto;
-      border: 1.5px solid brown;
+      border: 1px solid hsl(16.98deg 100% 68.82%);
     }
 
     .ms_row{
@@ -132,12 +136,14 @@ import SmallestCard from "./SmallestCard.vue";
     .aside{
       align-items: start;
 
-      h4{
+      .guides{
         text-align: left;
         margin-top: 3rem;
       }
-      hr{
-        margin: 2rem 0;
+      .ms_hr{
+      width: 70px;
+      
+      border: 1px solid hsl(16.98deg 100% 68.82%);
       }
     }
     

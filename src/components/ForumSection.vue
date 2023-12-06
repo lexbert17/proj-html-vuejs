@@ -52,24 +52,35 @@ export default{
 <style lang="scss" scoped>
 section{
 text-align: center;
+background-color: hsl(0deg 0% 94.9%);
   .ms_container{
     width: 75%;
-    background: palegreen;
-
-      h4{}
+    padding-top: 5rem;
+      h4{
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      font-size: .8rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: gray;
+      }
 
       h2{
-
+      font-family: 'Noto Sans TC Variable', sans-serif;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
       }
       hr{
       width: 70px;
       margin: auto;
-      border: 1.5px solid brown;
+      border: 1px solid orange;
+      
       
       }
       .row{
         width: 100%;
         margin: auto;
+        padding-top: 1.5rem;
         .ms_col{
           flex-wrap: wrap;
           justify-content: space-around;
@@ -79,9 +90,11 @@ text-align: center;
         }
       }
     .ms_card{
-      background-color: green;
+      background-color: white;
       aspect-ratio: 1;
       width: 200px;
+      border-top: 2px solid hsl(196.32deg 54.84% 48.63%);
+      margin-bottom: 5rem;
 
       .content{
         display: flex;
@@ -92,8 +105,11 @@ text-align: center;
        a{
         text-decoration: none;
         color: black;
+        letter-spacing: -1px;
+        font-weight: 900;
+        font-family: 'Noto Sans TC Variable', sans-serif;
           .orange{
-              background-color: orange;
+              background-color: hsl(16.98deg 100% 68.82%);
               display: inline-block;
               height: 4rem;
               aspect-ratio: 1;
@@ -106,7 +122,7 @@ text-align: center;
                 transform: translateY(-50%);
               }
           }
-       }  
+        }  
       }  
     }
   }

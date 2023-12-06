@@ -16,7 +16,6 @@
       <div class="avada mb-3">
         <a href="">GET AVADA NOW! <i class="fa-solid fa-chevron-right fa-sm" style="color: #ffffff;"></i></a>
       </div>
-      
     </div>
   </section>    
 </template>
@@ -32,26 +31,29 @@
 
     .ms_container{
       width: 75%;
-    
-      
-      background-color: red;
+
       h1{
+        font-weight: 1000;
+        font-family: 'Poppins', sans-serif;
+        font-size: 6rem
         
       }
       p{
-
+        font-family: 'Fira Mono', sans-serif;
       }
       .avada{
-        background-color: blue;
+        background-color: hsl(187.95deg 66.52% 44.51%);
         display: inline-block;
-      
+        height: 3rem;
+        
         a{
           text-decoration: none;
           color: white;
           padding:  0px 20px  ;
-          height: 2rem;
-          
-          
+          height: 3rem;
+          font-family: 'Fira Mono', sans-serif;
+          font-weight: 800;
+          line-height: 3rem;   
         }
       }
 

@@ -22,11 +22,23 @@ export default{
 
 <style lang="scss" scoped>
 section{
-background-color: aqua;
+background-color: hsl(0deg 0% 94.9%);
   .ms_small{
     text-align: center;
     width: 50%;
     padding: 3rem 0;
+
+    h4{
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      font-size: .8rem;
+      letter-spacing: 1px;
+    }
+    p{
+      color: gray;
+      font-size: 1.5rem;
+      font-family: 'Noto Sans TC Variable', sans-serif;
+    }
   }
 }
 </style>

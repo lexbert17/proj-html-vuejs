@@ -1,6 +1,6 @@
 import { reactive } from "vue";
 export const store = reactive ({
-    arrayHeader:["Home" , "Apple", "Microsoft", "Android", "Forums", "Contact us", "join us"],
+    arrayHeader:["Home" , "Apple", "Microsoft", "Android", "Forums", "Contact us", "JOIN US"],
     arrayForum:[
         {
             icon:"fa-solid fa-file-lines fa-2xl",
@@ -38,4 +38,5 @@ export const store = reactive ({
     popularTopics:["Nam a dolorvolutpat massa auctor semper", "Sed euismod nunc urna fermentum arcu dapibus fringilla.","Cras lacinia tellus id mauris finibus lacus molestie", "Curabitur a scelerisque ligula"],
     recentTopics:["Cras lacinia tellus id mauris finibus lacus molestie", "Proin at ligula sagittis vestibulum nisi vitae", "Sed nec metus at est tincidunt elementum", "Nulla egestas nuella eu nulla suscipit molestie" ],
     latestReplies:["Cras lacinia tellus id mauris finibus lacus molestie", "Cras lacinia tellus id mauris finibus lacus molestie", "Nulla egestas nuella eu nulla suscipit molestie", "Mauris ac nibh quis eros sagittis lacinia a et dui"],
+    arraySocial:["fa-brands fa-facebook-f fa-lg", "fa-brands fa-twitter fa-lg", "fa-brands fa-instagram fa-lg", "fa-brands fa-youtube fa-lg"]
 })

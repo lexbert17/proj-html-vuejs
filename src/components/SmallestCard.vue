@@ -52,11 +52,14 @@ a{
 
         h5{
             font-size: .8rem;
+            font-weight: 800;
+            font-family: 'Noto Sans TC Variable', sans-serif;
            
         }
         p{
-          font-size: .8rem; 
+          font-size: .6rem; 
           color: gray;
+          font-family: 'Noto Sans TC Variable', sans-serif;
           
         }
     }

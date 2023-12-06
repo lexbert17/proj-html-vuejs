@@ -20,29 +20,25 @@ export default{
         <li v-for="list in this.store.arrayHeader"><a href="">{{ list }}</a></li>
         <li><i class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i></li>
       </ul>
-
-        
+     
     </div>
  </header>
 </template>
 
 <style lang="scss" scoped>
 header{
-  background-color: green;
+  background-color: hsl(187.95deg 65.94% 44.9%);
   
 .ms_container{
   flex-wrap: wrap;
-  background-color: blue;
   justify-content: space-between;
   width: 75%;
   padding: 1rem 0;
   align-items: stretch;
   
   .img_container{
-    background-color: red;
     max-width: 250px;
 
-     
       img{
         width: 100%;
       }
@@ -52,31 +48,32 @@ header{
       gap: 1rem; 
       align-items: end;
       margin-top: 1rem;
-      
-      
-      
-      
-      
+       
       li:nth-child(7){
         background-color: black;
         display: block;
-        
-        
+        font-family: 'Open Sans Variable', sans-serif;
+        font-weight: 600;
+        width: 100px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+  
         a{
-          padding: 0 15px;
-          
-          
+          padding: 0 20px;
         }
+
       }
+
       li{
         text-decoration: none; 
         align-self: center;
         height: 100%;
+        font-family: 'Fira Mono', sans-serif;
         
         a{
           text-decoration: none;
-          color: white;
-          
+          color: white;  
         }
       }
     
