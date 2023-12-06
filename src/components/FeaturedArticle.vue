@@ -12,11 +12,14 @@ export default{
 </script>
 
 <template>
+  <!-- notizia speciale  -->
   <section class="ms_wrap mt-5">
     <div class="position">
         <h4>FEATURE ARTICLE</h4>
         <h3 class="mb-3">Cras malesuada et orci eget pharetra</h3>
         <p class="mb-4">In quis lectus  sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed baldit dui, dolor at bibendum sadips ets ipsums dolores ficilis uns  leo lectus.</p>
+
+        <!-- bottone -->
         <ReadMore/>
     </div>        
   </section>

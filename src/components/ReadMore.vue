@@ -9,6 +9,7 @@
 </script>
 
 <template>
+  <!-- bottone  -->
 <div class="button">
     <a href="">READ MORE  <i class="fa-solid fa-chevron-right fa-xs" style="color: #ffffff;"></i></a>
 </div>
@@ -21,6 +22,10 @@
     line-height: 2.5rem;
     height: 2.5rem;
     padding: 0 25px;
+
+    &:hover{
+      filter: brightness(2);
+    }
 
     a{
         text-decoration: none;

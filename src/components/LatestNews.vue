@@ -82,19 +82,30 @@ import SmallestCard from "./SmallestCard.vue";
     <h4 class="ms_pasellus">PHASELLUS EGET METUS</h4>
     <h2>All the latest news</h2>
     <hr class="mt-4 first_hr">
+
+    <!-- ultime notizie  -->
     <div class="ms_row mt-5">
       <div class="ms_col" v-for="(new1, index) in newsTop" :key="index">
         <NewsCard :image="new1.src" :title="new1.titolo" :date="new1.data" :content="new1.paragrafo"/>
       </div>
     </div>
+
+    <!-- notizia speciale -->
     <FeaturedArticle/>
+
+    <!-- ultime notizie  -->
     <div class="ms_row mt-5">
       <div class="ms_col" v-for="(new2, index) in newsBot" :key="index">
         <NewsCard :image="new2.src" :title="new2.titolo" :date="new2.data" :content="new2.paragrafo"/>
       </div>
     </div>
+
     <div class="d-flex aside">
+
+      <!-- aside sinistro  -->
       <ReviewedProduct/>
+
+      <!-- aside destro  -->
       <div class="mt-5">
         <h4 class="guides">Tutorials & Guides</h4>
         <hr class="ms_hr mt-4 mb-4">
@@ -102,7 +113,9 @@ import SmallestCard from "./SmallestCard.vue";
           <SmallestCard :image="tutorial.src" :title="tutorial.titolo" :date="tutorial.data" :content="tutorial.paragrafo"/>
         </div>
       </div>
+
     </div>
+
   </div>
 </section>
 </template>

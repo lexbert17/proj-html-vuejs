@@ -16,9 +16,10 @@ export default{
         <h4>PHASELLUS EGET METUS</h4>
         <h2>Forum Sections</h2>
         <hr class="mt-4 mb-4">
+
         <div class="row d-flex ">
           <div class="col-4 d-flex gap-5 ms_col">
-
+            <!-- cards forum -->
             <div class="ms_card" v-for="forum in store.arrayForum" >
                 <div class="content">
                   <a href="">
@@ -29,22 +30,9 @@ export default{
                   </a>
                 </div>
              </div>
-
-            
-
-            
-
-       
-  
-
-         
-
-
-
-
-
           </div>
         </div>
+        
       </div>
   </section>
 </template>

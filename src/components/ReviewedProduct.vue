@@ -18,6 +18,8 @@ import ReadMore from './ReadMore.vue';
             <h4>REVIEWED PRODUCT</h4>
             <h3>Mauris viverra atisan ipsum eget felis  prims efficitur varius</h3>
             <p class=mb-4>In quis lectus  sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed baldit dui, dolor at bibendum.</p>
+
+            <!-- bottone  -->
             <ReadMore/>
         </div>        
     </aside>

@@ -14,7 +14,9 @@
       <h3 class="mb-4">Subscribe to our Newsletter</h3>
       <form action="/action_page.php">
         <label for="email"></label>
+        <!-- text email  -->
         <input type="email" id="email" placeholder="insert your email*" name="email">
+        <!-- bottone invio -->
         <input id="send" type="submit" value="SEND">
       </form>
     </div>

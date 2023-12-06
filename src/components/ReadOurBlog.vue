@@ -35,6 +35,7 @@ section{
     font-size: .9rem;
     font-weight: 700;
     color: white;
+
   }
   }
   

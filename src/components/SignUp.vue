@@ -13,6 +13,8 @@
     <div class="smallest-container">
         <h2>Hey! Join to our Community </h2>
         <p>Nulla molestie nec lectus venenatis,sed blandit dui finibus. Curabitur feugiat vulputate purus ipsums dolores ficilis uns  etra</p>
+
+        <!-- bottone  -->
         <div class="signup ">
             <a href="">SIGN UP <i class="fa-solid fa-chevron-right fa-sm" style="color: #ffffff;"></i></a>
         </div>
@@ -49,6 +51,10 @@ section{
                 width: 100px;
                 background-color: hsl(187.95deg 66.52% 44.51%);
                 margin-top: 1.5rem;
+
+                    &:hover{
+                    filter: brightness(1.75);
+                    }
                     a{
                     height: 2.5rem;
                     line-height: 2.5rem;

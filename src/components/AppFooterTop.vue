@@ -14,11 +14,13 @@ import { store } from '../store';
   <div class="row d-flex ms_row">
     <div class="col-4 d-flex ms_col">
 
+      <!-- avada tech forum  -->
       <div class="ms_card">
         <h5 class="mb-4">AVADA TECH FORUM</h5>
         <p>Sed semper, nisl id feugiat eleifend, erat est digssim felis, quis auctor elit enim nec ante. Cras et nibh risus. Pellentesque non mi sit amet mi intermentum.</p>
       </div>  
 
+      <!-- popular topics  -->
       <div class="ms_card">
         <h5 class="mb-4">POPULAR TOPICS</h5>
         <ul class="list-group list-group-flush">
@@ -26,6 +28,7 @@ import { store } from '../store';
         </ul>
       </div>
 
+      <!-- recent topics  -->
       <div class="ms_card">
         <h5 class="mb-4">RECENT TOPICS</h5>
         <ul class="list-group list-group-flush">
@@ -33,6 +36,7 @@ import { store } from '../store';
         </ul>
       </div>
 
+      <!-- latest replies  -->
       <div class="ms_card">
         <h5 class="mb-4">LATEST REPLIES</h5>
         <ul class="list-group list-group-flush">
@@ -58,9 +62,6 @@ margin: auto;
     width: 100%;
     display: flex;
     margin-top: 4rem;
-  
-    
-    
 
     .ms_col{
       width: 100%;
@@ -68,7 +69,6 @@ margin: auto;
       display: flex;
       justify-content: space-between;
       gap: 1rem;
-      
 
       .ms_card{
         width: 22%;

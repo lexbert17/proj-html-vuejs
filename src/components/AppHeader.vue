@@ -10,12 +10,14 @@ export default{
 </script>
 
 <template>
- <header>
+ <header id="home">
     <div class="container d-flex ms_container">
+      <!-- contenitore logo  -->
       <div class="img_container">
         <img src="../assets/images/big-logo.png" alt="">
       </div>
       
+      <!-- contenitore menu -->
       <ul class=" d-flex">
         <li v-for="list in this.store.arrayHeader"><a href="">{{ list }}</a></li>
         <li><i class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i></li>
@@ -36,6 +38,7 @@ header{
   padding: 1rem 0;
   align-items: stretch;
   
+  // logo 
   .img_container{
     max-width: 250px;
 
@@ -43,6 +46,9 @@ header{
         width: 100%;
       }
     }
+    // /logo
+    
+    // menu 
     ul{
       list-style: none;
       gap: 1rem; 
@@ -58,11 +64,14 @@ header{
         margin-bottom: 10px;
         display: flex;
         align-items: center;
+
+        &:hover{
+          filter: brightness(1.75);
+        }
   
         a{
           padding: 0 20px;
         }
-
       }
 
       li{
@@ -76,7 +85,7 @@ header{
           color: white;  
         }
       }
-    
+      // menu 
     }  
 
 }

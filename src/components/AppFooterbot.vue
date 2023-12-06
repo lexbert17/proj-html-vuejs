@@ -15,6 +15,7 @@ import { store } from '../store';
   <div class="ms_container">
     <p>&#169; Copyright 2012 - 2020 | Avada Theme by <a href="">Theme Fusion</a> | All Rights Reserved | Powered by <a href="">WordPress</a></p>
 
+    <!-- icone  -->
     <ul class="content">    
       <li v-for="icon in store.arraySocial">
         <a href="">
@@ -24,6 +25,10 @@ import { store } from '../store';
     </ul>
 
   </div>
+
+  <div class="go-top">
+    <a href="#home"><i class="fa-solid fa-chevron-up fa-xl" style="color: #ffffff;"></i></a>
+  </div>
 </section>
 </template>
 
@@ -32,6 +37,7 @@ section{
   margin-top: 4rem;
   display: flex;
   justify-content: center;
+  position: relative;
 
   .ms_container{
     padding: 2rem 0 1rem 0;
@@ -95,6 +101,14 @@ section{
       } 
     }  
        
+  }
+  .go-top{
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    right: -100px;
+    height: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 90px;
   }
 }
 </style>
