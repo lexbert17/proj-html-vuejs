@@ -32,7 +32,7 @@ export default{
              </div>
           </div>
         </div>
-        
+
       </div>
   </section>
 </template>
@@ -83,6 +83,10 @@ background-color: hsl(0deg 0% 94.9%);
       width: 200px;
       border-top: 2px solid hsl(196.32deg 54.84% 48.63%);
       margin-bottom: 5rem;
+
+      &:hover{
+        transform: scale(1.1);
+      }
 
       .content{
         display: flex;
