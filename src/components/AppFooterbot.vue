@@ -57,7 +57,6 @@ section{
     gap: 1rem;
 
       li{
-        background-color: black;
         display: inline-block;
         height: 2.5rem;
         aspect-ratio: 1;
@@ -65,6 +64,23 @@ section{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
+
+        &:nth-child(1){
+          background-color: hsl(220.88deg 43.13% 41.37%);
+        }
+
+        &:nth-child(2){
+        background-color:hsl(205.71deg 81.91% 63.14%) ;
+        }
+
+        &:nth-child(3){
+        background-color:hsl(206.74deg 42.2% 42.75%) ;
+        }
+        &:nth-child(4){
+        background-color: hsl(0.34deg 73.73% 46.27%) ;
+        }
+
+
           
        a{
        text-decoration: none;
