@@ -34,5 +34,8 @@ export const store = reactive ({
             icon:"fa-solid fa-wrench fa-2xl",
             title:"Tutorials & Guides"
         },
-    ]
+    ],
+    popularTopics:["Nam a dolorvolutpat massa auctor semper", "Sed euismod nunc urna fermentum arcu dapibus fringilla.","Cras lacinia tellus id mauris finibus lacus molestie", "Curabitur a scelerisque ligula"],
+    recentTopics:["Cras lacinia tellus id mauris finibus lacus molestie", "Proin at ligula sagittis vestibulum nisi vitae", "Sed nec metus at est tincidunt elementum", "Nulla egestas nuella eu nulla suscipit molestie" ],
+    latestReplies:["Cras lacinia tellus id mauris finibus lacus molestie", "Cras lacinia tellus id mauris finibus lacus molestie", "Nulla egestas nuella eu nulla suscipit molestie", "Mauris ac nibh quis eros sagittis lacinia a et dui"],
 })
