@@ -36,13 +36,14 @@ section{
   .ms_container{
     padding: 2rem 0 1rem 0;
     width: 75%;
-    background-color: yellowgreen;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     p{
       color: gray;
+      font-family: 'Noto Sans TC Variable', sans-serif;
+      font-size: .6rem;
       a{
         text-decoration: none;
         color: black;

@@ -53,11 +53,11 @@ import { store } from '../store';
 <style lang="scss" scoped>
 section{
 width: 75%;
-background-color: aquamarine;
 margin: auto;
   .ms_row{
     width: 100%;
     display: flex;
+    margin-top: 4rem;
   
     
     
@@ -72,21 +72,37 @@ margin: auto;
 
       .ms_card{
         width: 22%;
+
+        h5{
+          font-size: .9rem;
+          font-weight: 800;
+          letter-spacing: -1px;
+        }
+        p{
+          color: gray;
+          font-family: 'Noto Sans TC Variable', sans-serif;
+          font-size: .8rem;
+          line-height: 1.5rem;
+        }
         ul{
           list-style: none;
           
           gap: .5rem;
           li{
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid lightgray;
             padding-bottom: .5rem;
 
             a{
               text-decoration: none;
               color: black;
+              font-family: 'Noto Sans TC Variable', sans-serif;
+              font-size: .8rem;
+              line-height: 1.5rem;
               span{
               padding-right: .5rem;
               font-size: .7rem;
               margin-top: .2rem;
+
             }
             }
 

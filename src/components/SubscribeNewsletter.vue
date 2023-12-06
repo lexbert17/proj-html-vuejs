@@ -25,13 +25,17 @@
 section{
 justify-content: center;
 align-items: center;
-background-color: lightcoral;
+background-color: hsl(0deg 0% 94.9%)  ;
+
 
 .ms_position{
   padding: 4rem 0 ;
 
   h3{
     text-align: center;
+    font-family: 'Noto Sans TC Variable', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
   }
   #email{
     height: 2rem;
@@ -40,6 +44,7 @@ background-color: lightcoral;
     padding: .5rem;
     border:gray;
     margin-right: 2rem; 
+    background-color: white;
   }
 
   #send{
@@ -49,6 +54,8 @@ background-color: lightcoral;
     color: white;
     background-color: black;
     border: black;
+    font-size: .9rem;
+    letter-spacing: -1px;
   }
 }
 }

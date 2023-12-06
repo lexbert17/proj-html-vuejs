@@ -24,7 +24,7 @@
 
 <style lang="scss" scoped>
 section{
-  background-color: violet;
+  background-color: black;
   height: 6rem;
   display: flex;
   justify-content: center;
@@ -34,6 +34,9 @@ section{
     h4{
     font-size: 1rem;
     color: white;
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 600;
   }
   }
   

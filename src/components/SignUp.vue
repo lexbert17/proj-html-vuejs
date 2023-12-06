@@ -34,23 +34,30 @@ section{
 
     .smallest-container{
         width: 26%;
-        background-color: red;
         margin: 4rem 0;
-        
-        .signup{
-            background-color: black;
-            display: inline-block;
-            height: 2.5rem;
-            width: 100px;
-            
-
-            a{
-                height: 2.5rem;
-                line-height: 2.5rem;
-                text-decoration: none;
-                color: white;
+            h2{
+            font-family: 'Noto Sans TC Variable', sans-serif;
+            font-weight: 900;
             }
-        }
+            p{
+            font-family: 'Noto Sans TC Variable', sans-serif;
+            font-size: .7rem;
+            }
+              .signup{
+                display: inline-block;
+                height: 2.5rem;
+                width: 100px;
+                background-color: hsl(187.95deg 66.52% 44.51%);
+                margin-top: 1.5rem;
+                    a{
+                    height: 2.5rem;
+                    line-height: 2.5rem;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 500;
+                    font-size: .9rem;
+                    }
+                }
     }
 
 }
