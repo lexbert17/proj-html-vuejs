@@ -7,7 +7,6 @@ import  DescriptionForum from "./components/DescriptionForum.vue";
 import LatestNews from './components/LatestNews.vue';
 import ReadOurBlog from './components/ReadOurBlog.vue';
 import ForumSection from './components/ForumSection.vue';
-import OurForum from './components/OurForum.vue'
 import SubscribeNewsletter from './components/SubscribeNewsletter.vue';
 import AppFooterTop from './components/AppFooterTop.vue';
 import AppFooterbot from './components/AppFooterbot.vue';
@@ -19,10 +18,11 @@ import SignUp from './components/SignUp.vue';
 export default {
   data() {
     return{
-
+      ReadOurBlog:"READ OUR BLOG",
+      gotoOurForum:"GO TO OUR FORUM"
     }
   },
-  components : { AppHeader, AppHero, DescriptionForum, LatestNews, ReadOurBlog, ForumSection, SubscribeNewsletter, AppFooterTop, AppFooterbot, OurForum, SignUp, }
+  components : { AppHeader, AppHero, DescriptionForum, LatestNews, ReadOurBlog, ForumSection, SubscribeNewsletter, AppFooterTop, AppFooterbot, SignUp, }
 }
 </script>
 
@@ -31,9 +31,9 @@ export default {
 <AppHero/>
 <DescriptionForum/>
 <LatestNews/>
-<ReadOurBlog />
+<ReadOurBlog :title="ReadOurBlog"/>
 <ForumSection/>
-<OurForum/>
+<ReadOurBlog :title="gotoOurForum"/>
 <SignUp/>
 <SubscribeNewsletter/>
 <AppFooterTop/>

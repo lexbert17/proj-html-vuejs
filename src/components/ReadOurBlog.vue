@@ -1,6 +1,8 @@
 <script >
     export default{
-      
+      props: {
+            title: String,
+        },
   data() {
     return{
       
@@ -14,7 +16,7 @@
   <section>
     <div>
       <a href="">
-        <h4>READ OUR BLOG <i class="fa-solid fa-arrow-right fa-sm" style="color: #ffffff;"></i></h4>
+        <h4>{{title}} <i class="fa-solid fa-arrow-right fa-sm" style="color: #ffffff;"></i></h4>
       </a>  
     </div>
       
